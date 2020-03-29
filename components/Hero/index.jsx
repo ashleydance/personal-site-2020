@@ -7,7 +7,7 @@ const Hero = () => (
     <div>
       <S.HeroTitle>Ashley Dance</S.HeroTitle>
       <S.HeroText>
-        Frontend Egineer at
+        Frontend Engineer at
         {' '}
         <a href="https://www.gymshark.com/" target="_blank" rel="noopener noreferrer" title="Visit Gymshark.com">
           Gymshark
