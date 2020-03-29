@@ -18,7 +18,7 @@ export const HeroTitle = styled.h1`
 
 export const HeroText = styled.p`
     color: ${(props) => props.theme.colours.white};
-    margin: 1.6rem 0 0 0;
+    margin: 1.6rem 0;
     font-size: 2.2rem;
 
     a {

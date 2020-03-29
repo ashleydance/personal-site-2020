@@ -1,6 +1,7 @@
 import React from 'react';
 
 import * as S from './styles';
+import SocialLinks from '../SocialLinks';
 
 const Hero = () => (
   <S.Hero>
@@ -13,6 +14,7 @@ const Hero = () => (
           Gymshark
         </a>
       </S.HeroText>
+      <SocialLinks />
     </div>
   </S.Hero>
 );
