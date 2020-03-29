@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../theme/media';
 
 export const Hero = styled.div`
     padding: 0 6em;
@@ -7,6 +8,10 @@ export const Hero = styled.div`
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     display: flex;
     align-items: center;
+
+    @media ${device.tablet} {
+        padding: 0 3rem;
+    }
 `;
 
 export const HeroTitle = styled.h1`
@@ -14,12 +19,29 @@ export const HeroTitle = styled.h1`
     color: ${(props) => props.theme.colours.white};
     font-family: ${(props) => props.theme.fonts.heading};
     margin: 0;
+
+    @media ${device.tablet} {
+        font-size: 6rem;
+    }
+
+    @media ${device.mobileL} {
+        font-size: 4rem;
+    }
 `;
 
 export const HeroText = styled.p`
     color: ${(props) => props.theme.colours.white};
     margin: 1.6rem 0;
     font-size: 2.2rem;
+
+    @media ${device.tablet} {
+        font-size: 2rem;
+    }
+
+    @media ${device.mobileL} {
+        margin: 1rem 0;
+        font-size: 1.8rem;
+    }
 
     a {
         color: ${(props) => props.theme.colours.white};

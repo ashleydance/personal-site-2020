@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../theme/media';
 
 export const List = styled.ul`
     padding: 0;
@@ -6,7 +7,22 @@ export const List = styled.ul`
     list-style: none;
     display: flex;
 
+    @media ${device.mobileL} {
+        display: block;
+    }
+
     li {
+        @media ${device.mobileL} {
+            margin-bottom: 1rem;
+            &::after {
+                display: none;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
         &::after {
             content: "-";
             color: ${(props) => props.theme.colours.white};
