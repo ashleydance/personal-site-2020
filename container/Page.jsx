@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 const theme = {
   colours: {
     white: '#ffffff',
-    orange: '#FBAB7E',
+    orange: '#f6d365',
   },
   fonts: {
     heading: 'Roboto, sans-serif',

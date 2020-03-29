@@ -4,8 +4,8 @@ import { device } from '../../theme/media';
 export const Hero = styled.div`
     padding: 0 6em;
     height: 100vh;
-    background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    background-color: ${(props) => props.theme.colours};
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     display: flex;
     align-items: center;
 
