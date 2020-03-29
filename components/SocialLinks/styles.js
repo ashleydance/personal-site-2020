@@ -28,7 +28,7 @@ export const List = styled.ul`
         &:focus {
             background-color: ${(props) => props.theme.colours.white};
             color: ${(props) => props.theme.colours.orange};
-            padding: 5px;
+            padding: 0.5rem;
             text-decoration: none;
             outline: none;
         }
